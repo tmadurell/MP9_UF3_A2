@@ -24,7 +24,7 @@ public class ClientUDP {
         Imprimeix monitor= new Imprimeix();
 
         DatagramPacket packet;
-        byte [] receivedData = new byte[5];
+        byte [] receivedData = new byte[4];
 
         socket.joinGroup(group,netIf);
         System.out.printf("Connectat a %s:%d%n",group.getAddress(),group.getPort());
